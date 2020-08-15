@@ -8,7 +8,8 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix qnopy-assign",
     "clientinstall": "npm install --prefix qnopy-assign",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix qnopy-assign && npm run build --prefix qnopy-assign"
   },
   "author": "",
   "license": "ISC",
